@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #272822;
+  padding-bottom: 100em;
+}
+h1 {
+  text-align: center;
+  color: lighten(steelblue,20);
+}
+
+.gear {
+  $bgsize: #ccc;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1em dotted $bgsize;
+  background:
+    radial-gradient(
+      transparent 15%,
+      $bgsize 15%) padding-box;
+  margin: 3em auto;
+  animation: girar 6s linear infinite;
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}

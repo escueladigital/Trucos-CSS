@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+}
+
+h1 {
+  text-align: center;
+  color: #eee;
+}
+
+.degradados {
+  width: 350px;
+  height: 350px;
+  border: 2px solid #ccc;
+  margin: auto;
+  background: -webkit-repeating-linear-gradient(45deg, #eee 0, #eee 10px, #333 10px, #333 20px);
+  background: repeating-linear-gradient(45deg, #eee 0, #eee 10px, #333 10px, #333 20px);
+}
+
+.loader {
+  width: 600px;
+  height: 35px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  margin: auto;
+  background: -webkit-repeating-linear-gradient(150deg, steelblue 0, steelblue 10px, #7ba7cc 10px, #7ba7cc 20px) 0/200%;
+  background: repeating-linear-gradient(-60deg, steelblue 0, steelblue 10px, #7ba7cc 10px, #7ba7cc 20px) 0/200%;
+  -webkit-animation: loader 8s linear infinite;
+          animation: loader 8s linear infinite;
+}
+
+@-webkit-keyframes loader {
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes loader {
+  to {
+    background-position: 100% 0;
+  }
+}

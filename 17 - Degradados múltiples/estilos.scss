@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+  background: #333;
+}
+
+h1 {
+  color: #eee;
+}
+
+.degradados {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  border: 2px solid #ccc;
+  margin: 1em auto;
+  background-image: linear-gradient(
+                    left,
+                    #0035AD 35%,
+                    transparent 35%
+                    ),
+                    linear-gradient(
+                    white 50%,
+                    #D42E12 50%
+                    );
+  background-size: 100% 50%, auto;
+  background-repeat: no-repeat;
+  &:before {
+    content: "\2605";
+    position: absolute;
+    color: #fff;
+    top: .2em;
+    left: .25em;
+    font-size: 8em;
+    line-height: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

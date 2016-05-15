@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
+$color_lineas: #e0b8b8;
+$color_fondo: #fef1c3;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #222;
+}
+
+.paper {
+  width: 400px;
+  height: 500px;
+  margin: 2em auto;
+  background-image: linear-gradient(
+                  $color_fondo 98%,
+                  $color_lineas 98%);
+  background-size: 100% 40px;
+  background-position: 0 1em;
+  font-family: 'Shadows Into Light Two', sans-serif;
+  padding: 1em;
+  h1 {
+    color: darkred;
+    margin: 0;
+    line-height: 80px;
+  }
+  ul {
+    margin: 0;
+    list-style: none;
+    
+    li {
+      font-size: 1.3em;
+      position: relative;
+      line-height: 40px;
+      &:before {
+        content: "\2713";
+        color: green;
+        font-weight: bold;
+        position: absolute;
+        left: -1.2em;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

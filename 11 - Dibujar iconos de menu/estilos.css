@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/css?family=Righteous);
+body {
+  background: #DC4532;
+  background: #DC4532;
+  color: #fff;
+  font-family: Righteous;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-weight: normal;
+  padding: 1em 0;
+  text-align: center;
+  margin: 0;
+}
+
+.principal,
+.secundario {
+  box-sizing: border-box;
+  width: 50%;
+  margin: 1em auto;
+  font-size: 2em;
+  position: relative;
+  cursor: pointer;
+}
+
+.principal:before,
+.secundario:before {
+  content: "";
+  display: block;
+  height: .2em;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  box-shadow: 0 0.4em, 0 0.8em;
+}
+
+.principal {
+  padding-left: 2em;
+}
+
+.principal:before {
+  width: 1.6em;
+}
+
+.secundario {
+  padding-left: .6em;
+}
+
+.secundario:before {
+  width: .2em;
+  border-radius: 50%;
+}

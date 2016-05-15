@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+$boton: teal;
+
+body {
+	background: #f6f6f6;
+	margin: 0;
+	padding: 0;
+	font-family: Lato, sans-serif;
+	perspective: top;
+}
+
+.page {
+	width: 80%;
+	margin: 2em auto;
+}
+
+.boton {
+	$button-bg: green;
+	box-sizing: border-box;
+	background: linear-gradient($button-bg,darken($button-bg,6));
+	border: 1px solid darken($button-bg,10);
+	border-bottom-width: 4px;
+	border-radius: .3em;
+	box-shadow: 0 0 0 1px rgba(#fff,.15) inset;
+	color: #fff;
+	display: inline-block;
+	line-height: 2.8em;
+	height: 3em;
+	padding: 0 1.5em;
+	text-decoration: none;
+	text-shadow: 0 -1px 1px rgba(#000,.5);
+	font-size: 1em;
+
+	&:hover {
+		background: darken($button-bg,6)
+	}
+
+	&:active {
+		border-bottom-width: 1px;
+		line-height: 3em;
+		text-shadow: 0 1px 1px rgba(#000,.5);
+	}
+}

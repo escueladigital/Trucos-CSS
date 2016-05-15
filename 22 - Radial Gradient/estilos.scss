@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #eee;
+}
+
+.degradados {
+  width: 600px;
+  height: 350px;
+  border: 2px solid #000;
+  margin: 1em auto;
+  position: relative;
+  background:
+    //radial-gradient(
+    //  200px circle,
+    //  blue 50%,
+    //  transparent 50%
+    //),
+    linear-gradient(
+      30deg,
+      green 50%,
+      transparent 50%
+    ) 0 100% / 55% no-repeat,
+    linear-gradient(
+      -210deg,
+      green 50%,
+      transparent 50%
+    ) 0 0 / 55% no-repeat,
+    linear-gradient(
+      -30deg,
+      green 50%,
+      transparent 50%
+    ) 100% 100% / 55% no-repeat,
+    linear-gradient(
+      210deg,
+      green 50%,
+      transparent 50%
+    ) 100% 0 / 55% no-repeat,
+    yellow;
+  &:before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    background: radial-gradient(
+      450px circle at 0 250px,
+      blue 47%,
+      white 47%,
+      white 50%,
+      blue 50%
+    );
+  }
+}

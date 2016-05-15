@@ -1,0 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+body {
+  background: #222;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: Lobster;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4em;
+  text-align: center;
+  color: transparent;
+  font-weight: normal;
+  background: -webkit-linear-gradient(red 20%, yellow, red 89%);
+  background: linear-gradient(red 20%, yellow, red 89%);
+  -webkit-background-clip: text;
+  position: relative;
+}
+
+h1:after {
+  content: "Texto con fondo degradado";
+  position: absolute;
+  width: 100%;
+  top: 3px;
+  left: 3px;
+  color: #000;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=estilos.css.map */

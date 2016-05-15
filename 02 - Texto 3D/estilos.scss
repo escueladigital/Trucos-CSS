@@ -1,0 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Sigmar+One);
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Sigmar One';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: darken(steelblue,15%);
+}
+
+@function texto3d($numero,$color){
+	$text-shadow: 2px 2px #000;
+	@for $i from 1 through $numero {
+		$text-shadow: '#{$text-shadow},
+					   #{$i}px #{$i}px #{$color}';
+	}
+	@return unquote($text-shadow);
+}
+
+.texto3d {
+	font-size: 3.5em;
+	color: #eee;
+	text-shadow: texto3d(40,darken(steelblue,35%));
+	transform: rotate(-6deg);
+}

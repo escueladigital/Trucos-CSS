@@ -1,0 +1,30 @@
+body {
+	background: lightblue;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.page {
+	width: 80%;
+	margin: 2em auto;
+}
+
+.boton {
+	$button-bg: teal;
+	display: inline-block;
+	background: $button-bg;
+	line-height: 3em;
+	padding: 0 1.5em;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 1.5em;
+	border: 1px solid rgba(#000,.2);
+	&:hover {
+		background: darken($button-bg,5);
+	}
+	&:active {
+		transform: scale(.95);
+	}
+}

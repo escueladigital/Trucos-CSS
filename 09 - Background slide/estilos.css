@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400);
+body {
+  background: #F86335;
+  margin: 7em 0;
+  font-family: Montserrat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: .8em;
+}
+
+h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: .5em;
+  color: #fff;
+}
+
+div {
+  width: 25%;
+  flex: auto;
+  margin: 1em;
+  background: lightblue;
+  line-height: 6;
+  margin-bottom: 2em;
+  text-align: center;
+  transition: all 1s;
+}
+
+div:hover {
+  color: #fff;
+}
+
+.uno {
+  box-shadow: 5px 0 #BC1833 inset;
+}
+
+.uno:hover {
+  box-shadow: 250px 0 #BC1833 inset;
+}
+
+.dos {
+  box-shadow: -5px 0 #BC1833 inset;
+}
+
+.dos:hover {
+  box-shadow: -250px 0 #BC1833 inset;
+}
+
+.tres {
+  box-shadow: 0 5px #BC1833 inset;
+}
+
+.tres:hover {
+  box-shadow: 0 100px #BC1833 inset;
+}
+
+.cuatro {
+  box-shadow: 0 -5px #BC1833 inset;
+}
+
+.cuatro:hover {
+  box-shadow: 0 -100px #BC1833 inset;
+}
+
+.cinco {
+  box-shadow: -5px 0 #BC1833 inset, 5px 0 #BC1833 inset;
+}
+
+.cinco:hover {
+  box-shadow: 250px 0 #BC1833 inset, -250px 0 #BC1833 inset;
+}
+
+.seis {
+  box-shadow: 0 5px #BC1833 inset, 0 -5px #BC1833 inset;
+}
+
+.seis:hover {
+  box-shadow: 0 100px #BC1833 inset, 0 -100px #BC1833 inset;
+}

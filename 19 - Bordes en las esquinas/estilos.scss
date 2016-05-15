@@ -1,0 +1,58 @@
+$fondo: #111619;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: $fondo;
+}
+
+h1 {
+  color: lighten(yellow,30);
+  text-align: center;
+}
+
+.esquinas {
+  $border-color: lighten(purple,35);
+  width: 500px;
+  height: 300px;
+  box-shadow: 0 0 0 8px $fondo inset,
+              0 0 0 10px $border-color inset;
+  background: url(http://www.freewallpaperfullhd.com/wp-content/uploads/2015/01/Girl-Wallpaper-HD-1680x1050.jpg);
+  background-size: cover;
+  margin: 2em auto;
+  position: relative;
+  &:after {
+    content: "";
+    width: 508px;
+    height: 308px;
+    position: absolute;
+    z-index: -1;
+    top: -4px;
+    left: -4px;
+    background-image:
+    linear-gradient(
+      left,
+      transparent 30px,
+      $fondo 30px,
+      $fondo 478px,
+      transparent 478px
+    ),
+    linear-gradient(
+      $border-color 30px,
+      transparent 30px,
+      transparent 278px,
+      $border-color 278px
+    );
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

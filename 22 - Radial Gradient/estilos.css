@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #eee;
+}
+
+.degradados {
+  width: 600px;
+  height: 350px;
+  border: 2px solid #000;
+  margin: 1em auto;
+  position: relative;
+  background: -webkit-linear-gradient(60deg, green 50%, transparent 50%) 0 100%/55% no-repeat, -webkit-linear-gradient(300deg, green 50%, transparent 50%) 0 0/55% no-repeat, -webkit-linear-gradient(120deg, green 50%, transparent 50%) 100% 100%/55% no-repeat, -webkit-linear-gradient(240deg, green 50%, transparent 50%) 100% 0/55% no-repeat, yellow;
+  background: linear-gradient(30deg, green 50%, transparent 50%) 0 100%/55% no-repeat, linear-gradient(-210deg, green 50%, transparent 50%) 0 0/55% no-repeat, linear-gradient(-30deg, green 50%, transparent 50%) 100% 100%/55% no-repeat, linear-gradient(210deg, green 50%, transparent 50%) 100% 0/55% no-repeat, yellow;
+}
+
+.degradados:before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: -webkit-radial-gradient(0 250px, 450px circle, blue 47%, white 47%, white 50%, blue 50%);
+  background: radial-gradient(450px circle at 0 250px, blue 47%, white 47%, white 50%, blue 50%);
+}

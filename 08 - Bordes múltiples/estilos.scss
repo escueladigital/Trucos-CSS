@@ -1,0 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	background: #153165;
+}
+
+.container {
+	// Tamaño y color
+	width: 300px;
+	height: 150px;
+	margin: 2em auto;
+	padding: 2em;
+	background: #4099FF;
+	font-size: 2.5em;
+	color: #fff;
+
+	// Centrado absoluto del contenido
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	// Borde (para visualizar los límites)
+	// border: 2px solid #fff;
+}
+
+.container {
+	box-shadow: 0 0 0 4px #fff,
+				0 0 0 8px #153165,
+				0 0 0 12px #fff;
+}

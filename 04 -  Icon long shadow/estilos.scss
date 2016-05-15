@@ -1,0 +1,26 @@
+@function text-long-shadow($numero, $color){
+	$text-shadow: 1px 1px #{$color};
+	@for $i from 1 to $numero + 1 {
+		$text-shadow: '#{$text-shadow},
+					  #{$i}px #{$i}px #{$color}';
+	}
+	@return unquote($text-shadow);
+}
+
+@import url(https://fontastic.s3.amazonaws.com/wXUejw7cV5KRrdtkS8GFFi/icons.css);
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: darken(magenta,20%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.icon-twitter {
+	font-size: 8em;
+	color: darken(magenta,35%);
+	text-shadow: text-long-shadow(400,darken(magenta,28%));
+}

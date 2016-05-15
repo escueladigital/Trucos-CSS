@@ -1,0 +1,18 @@
+@import url(http://fonts.googleapis.com/css?family=Sigmar+One);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sigmar One';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #315a7d;
+}
+
+.texto3d {
+  font-size: 3.5em;
+  color: #eee;
+  text-shadow: 2px 2px #000, 					   1px 1px #142533, 					   2px 2px #142533, 					   3px 3px #142533, 					   4px 4px #142533, 					   5px 5px #142533, 					   6px 6px #142533, 					   7px 7px #142533, 					   8px 8px #142533, 					   9px 9px #142533, 					   10px 10px #142533, 					   11px 11px #142533, 					   12px 12px #142533, 					   13px 13px #142533, 					   14px 14px #142533, 					   15px 15px #142533, 					   16px 16px #142533, 					   17px 17px #142533, 					   18px 18px #142533, 					   19px 19px #142533, 					   20px 20px #142533, 					   21px 21px #142533, 					   22px 22px #142533, 					   23px 23px #142533, 					   24px 24px #142533, 					   25px 25px #142533, 					   26px 26px #142533, 					   27px 27px #142533, 					   28px 28px #142533, 					   29px 29px #142533, 					   30px 30px #142533, 					   31px 31px #142533, 					   32px 32px #142533, 					   33px 33px #142533, 					   34px 34px #142533, 					   35px 35px #142533, 					   36px 36px #142533, 					   37px 37px #142533, 					   38px 38px #142533, 					   39px 39px #142533, 					   40px 40px #142533;
+  transform: rotate(-6deg);
+}

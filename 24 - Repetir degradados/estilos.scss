@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+}
+
+h1 {
+  text-align: center;
+  color: #eee;
+}
+
+.degradados {
+  $color1: #eee;
+  $color2: #333;
+  $size: 20px;
+  width: 350px;
+  height: 350px;
+  border: 2px solid #ccc;
+  margin: auto;
+  background: repeating-linear-gradient(
+    45deg,
+    $color1 0,
+    $color1 $size / 2,
+    $color2 $size / 2,
+    $color2 $size
+  );
+}
+
+.loader {
+  $color1: steelblue;
+  $color2: lighten($color1,15);
+  $size: 20px;
+  width: 600px;
+  height: 35px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  margin: auto;
+  background: repeating-linear-gradient(
+    -60deg,
+    $color1 0,
+    $color1 $size / 2,
+    $color2 $size / 2,
+    $color2 $size
+  ) 0 / 200%;
+  animation: loader 8s linear infinite;
+}
+
+@keyframes loader{
+  to {
+    background-position: 100% 0;
+  }
+}

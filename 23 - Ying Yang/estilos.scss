@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #111;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.yin-yang {
+  $size: 300px;
+  $color1: white;
+  $color2: black;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  margin: 2em auto;
+  box-shadow: 0 0 20px 10px rgba(#fff,.15);
+  background:
+    radial-gradient(
+      $size / 10 circle at 50% 25%,
+      $color2 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      $size / 10 circle at 50% 75%,
+      $color1 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      $size / 2 circle at 50% 25%,
+      $color1 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      $size / 2 circle at 50% 75%,
+      $color2 50%,
+      transparent 50%
+    ),
+    linear-gradient(
+      90deg,
+      $color1 50%,
+      $color2 50%
+    );
+  animation: girar 2s linear infinite;
+}
+
+@keyframes girar{
+  to {
+    transform: rotate(360deg);
+  }
+}

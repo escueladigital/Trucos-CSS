@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #38678f;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 250px;
+  height: 300px;
+  margin: 2em auto;
+  background: #294d6b;
+  color: #eee;
+  font-size: 2.3em;
+  padding: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 0 2px #1b3246;
+  position: relative;
+}
+
+.container:before,
+.container:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+
+.container:before {
+  height: 4px;
+  width: 0;
+  bottom: 0;
+  box-shadow: 250px -296px rgba(255, 255, 255, 0.5);
+}
+
+.container:after {
+  top: 0;
+  width: 4px;
+  height: 0;
+  box-shadow: 246px 300px rgba(255, 255, 255, 0.5);
+}
+
+.container:hover:after {
+  height: 100%;
+  box-shadow: 246px 0 rgba(255, 255, 255, 0.5);
+}
+
+.container:hover:before {
+  width: 100%;
+  box-shadow: 0 -296px rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,76 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400);
+$frente: lightblue;
+$fondo: #BC1833;
+body {
+    background: #F86335;
+    margin: 7em 0;
+    font-family: Montserrat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: .8em;
+}
+
+h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: .5em;
+    color: #fff;
+}
+
+div {
+    width: 25%;
+    flex: auto;
+    margin: 1em;
+    background: $frente;
+    line-height: 6;
+    margin-bottom: 2em;
+    text-align: center;
+    transition: all 1s;
+    &:hover {
+        color: #fff;
+    }
+}
+
+.uno {
+    box-shadow: 5px 0 $fondo inset;
+    &:hover {
+        box-shadow: 250px 0 $fondo inset;
+    }
+}
+
+.dos {
+    box-shadow: -5px 0 $fondo inset;
+    &:hover {
+        box-shadow: -250px 0 $fondo inset;
+    }
+}
+
+.tres {
+    box-shadow: 0 5px $fondo inset;
+    &:hover {
+        box-shadow: 0 100px $fondo inset;
+    }
+}
+
+.cuatro {
+    box-shadow: 0 -5px $fondo inset;
+    &:hover {
+        box-shadow: 0 -100px $fondo inset;
+    }
+}
+
+.cinco {
+    box-shadow: -5px 0 $fondo inset, 5px 0 $fondo inset;
+    &:hover {
+        box-shadow: 250px 0 $fondo inset, -250px 0 $fondo inset;
+    }
+}
+
+.seis {
+    box-shadow: 0 5px $fondo inset, 0 -5px $fondo inset;
+    &:hover {
+        box-shadow: 0 100px $fondo inset, 0 -100px $fondo inset;
+    }
+}

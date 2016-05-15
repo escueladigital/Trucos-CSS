@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: seagreen;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+.item {
+    background: darken(seagreen,15);
+    line-height: 4;
+    padding: 0 2em;
+    margin: 1.5em;
+    color: #fff;
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 3px;
+        background: #fff;
+        position: absolute;   
+        bottom: 0;
+        transition: all .3s;
+    }
+    &:hover:before {
+        width: 100%;
+    } 
+}
+
+.uno:before {
+    left: 0; 
+}
+.dos:before {
+    right: 0;
+}
+.tres {
+    &:before {
+        left: 50%;
+    }
+    &:hover:before {
+        left: 0;
+    }
+}

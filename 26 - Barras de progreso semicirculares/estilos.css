@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #111;
+}
+
+h1 {
+  text-align: center;
+  color: #eee;
+}
+
+.skills-container {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.circular-progress {
+  margin: auto;
+  position: relative;
+}
+
+.circular-progress,
+.circular-progress:before,
+.circular-progress:after {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.circular-progress:before,
+.circular-progress:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.circular-progress:before {
+  padding: .5em;
+  line-height: 140px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.circular-progress:after {
+  font-size: .8rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 230px;
+}
+
+.html {
+  background: -webkit-linear-gradient(90deg, #ff1aff 50%, rgba(255, 26, 255, 0.3) 50%);
+  background: linear-gradient(0deg, #ff1aff 50%, rgba(255, 26, 255, 0.3) 50%);
+  -webkit-transform: rotate(72deg);
+      -ms-transform: rotate(72deg);
+          transform: rotate(72deg);
+}
+
+.html:before,
+.html:after {
+  color: #ff1aff;
+}
+
+.html:before {
+  background: #111 content-box;
+  -webkit-transform: rotate(-72deg);
+      -ms-transform: rotate(-72deg);
+          transform: rotate(-72deg);
+  content: "40%";
+}
+
+.html:after {
+  background: -webkit-linear-gradient(transparent 50%, #111 50%);
+  background: linear-gradient(transparent 50%, #111 50%);
+  content: "html";
+  -webkit-transform: rotate(-72deg) scale(1.1);
+      -ms-transform: rotate(-72deg) scale(1.1);
+          transform: rotate(-72deg) scale(1.1);
+}
+
+.css {
+  background: -webkit-linear-gradient(90deg, #ff1aff 50%, rgba(255, 26, 255, 0.3) 50%);
+  background: linear-gradient(0deg, #ff1aff 50%, rgba(255, 26, 255, 0.3) 50%);
+  -webkit-transform: rotate(108deg);
+      -ms-transform: rotate(108deg);
+          transform: rotate(108deg);
+}
+
+.css:before,
+.css:after {
+  color: #ff1aff;
+}
+
+.css:before {
+  background: #111 content-box;
+  -webkit-transform: rotate(-108deg);
+      -ms-transform: rotate(-108deg);
+          transform: rotate(-108deg);
+  content: "60%";
+}
+
+.css:after {
+  background: -webkit-linear-gradient(transparent 50%, #111 50%);
+  background: linear-gradient(transparent 50%, #111 50%);
+  content: "css";
+  -webkit-transform: rotate(-108deg) scale(1.1);
+      -ms-transform: rotate(-108deg) scale(1.1);
+          transform: rotate(-108deg) scale(1.1);
+}
+
+.javascript {
+  background: -webkit-linear-gradient(90deg, #ff1aff 50%, rgba(255, 26, 255, 0.3) 50%);
+  background: linear-gradient(0deg, #ff1aff 50%, rgba(255, 26, 255, 0.3) 50%);
+  -webkit-transform: rotate(162deg);
+      -ms-transform: rotate(162deg);
+          transform: rotate(162deg);
+}
+
+.javascript:before,
+.javascript:after {
+  color: #ff1aff;
+}
+
+.javascript:before {
+  background: #111 content-box;
+  -webkit-transform: rotate(-162deg);
+      -ms-transform: rotate(-162deg);
+          transform: rotate(-162deg);
+  content: "90%";
+}
+
+.javascript:after {
+  background: -webkit-linear-gradient(transparent 50%, #111 50%);
+  background: linear-gradient(transparent 50%, #111 50%);
+  content: "javascript";
+  -webkit-transform: rotate(-162deg) scale(1.1);
+      -ms-transform: rotate(-162deg) scale(1.1);
+          transform: rotate(-162deg) scale(1.1);
+}
+
+/*# sourceMappingURL=estilos.css.map */

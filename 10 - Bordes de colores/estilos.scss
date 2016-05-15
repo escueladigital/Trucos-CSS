@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400);
+body {
+	background: #AF57B7;
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat;
+}
+
+.container {
+	background: rgba(#fff,.4);
+	width: 500px;
+	height: 300px;
+	margin: 2em auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 2.5em;
+	position: relative;
+	overflow: hidden;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 5px;
+		background: #fff;
+		box-shadow: 100px 0 yellow inset,
+					200px 0 red inset,
+					300px 0 orange inset,
+					400px 0 lime inset,
+					500px 0 blue inset,
+					400px 295px blue,
+					300px 295px lime,
+					200px 295px orange,
+					100px 295px red,
+					0 295px yellow;
+	}
+}
