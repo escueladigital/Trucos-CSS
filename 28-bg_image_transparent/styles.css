@@ -1,0 +1,44 @@
+/*Estilos generales para todos los proyectos*/
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333; }
+
+h1 {
+  text-align: center;
+  color: #333; }
+
+body {
+  background: #383B44; }
+
+h1 {
+  color: rgba(255, 255, 255, 0.8); }
+
+.banner {
+  width: 80%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background: url("img/city.jpg") center/cover;
+  border: 1px solid #fff;
+  box-shadow: 0 5px 5px -5px #000; }
+  .banner__title, .banner__subtitle {
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff; }
+  .banner__title {
+    font-size: 3.5em; }
+  .banner__subtitle {
+    font-size: 1.5em;
+    letter-spacing: 0.1em; }

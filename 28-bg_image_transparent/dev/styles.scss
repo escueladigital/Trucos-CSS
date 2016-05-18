@@ -1,2 +1,48 @@
 // Importar estilos generales
 @import "../../styles";
+
+$bg-color: #383B44;
+$title-color: #fff;
+@function img($image){
+  @return url('img/' + $image);
+}
+
+body {
+  background : $bg-color;
+}
+
+h1 {
+  color: rgba($title-color,.8);
+}
+
+.banner {
+  width : 80%;
+  height :500px;
+  margin-left : auto;
+  margin-right : auto;
+
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background : img('city.jpg') center / cover;
+  border : 1px solid $title-color;
+  box-shadow: 0 5px 5px -5px #000;
+
+  &__title,
+  &__subtitle {
+    margin : 0;
+    text-transform : uppercase;
+    color: $title-color;
+  }
+
+  &__title {
+    font-size : 3.5em;
+  }
+
+  &__subtitle {
+    font-size : 1.5em;
+    letter-spacing: 0.1em;
+  }
+}
