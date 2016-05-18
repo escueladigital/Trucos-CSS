@@ -1,0 +1,48 @@
+@import "../../styles";
+@import url(https://fonts.googleapis.com/css?family=Oswald:300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+$opacity: .2;
+$main_color: #00AFF0;
+$secondary_color: #292D38;
+$text_color: #fff;
+
+.banner {
+  width : 80%;
+  height : 500px;
+  background : $main_color;
+  margin-left : auto;
+  margin-right : auto;
+  position : relative;
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &:before {
+    content: "";
+    background : url(img/city.jpg) center center / cover;
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    opacity : $opacity;
+    top : 0;
+  }
+  &__title,
+  &__subtitle {
+    color : $text_color;
+    position : relative;
+    text-transform : uppercase;
+  }
+  &__title {
+    font-size : 4em;
+    margin : 0;
+    font-family : Oswald, sans-serif;
+    font-weight : 300;
+  }
+  &__subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size : 1.3em;
+    margin : 0;
+    letter-spacing: 0.06em;
+  }
+}
