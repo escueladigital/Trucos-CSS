@@ -1,0 +1,52 @@
+/*Estilos generales para todos los proyectos*/
+@import url(https://fonts.googleapis.com/css?family=Oswald:300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333; }
+
+h1 {
+  text-align: center;
+  color: #333; }
+
+.banner {
+  width: 80%;
+  height: 500px;
+  background: #0AB0F0;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: relative; }
+  .banner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/city.jpg) center/cover;
+    opacity: 0.2; }
+  .banner__title, .banner__subtitle {
+    margin: 0;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center; }
+  .banner__title {
+    font-family: Oswald, 'sans-serif';
+    font-weight: 300;
+    font-size: 3.5em; }
+  .banner__subtitle {
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 1.3em;
+    letter-spacing: 0.07em; }
