@@ -1,0 +1,26 @@
+{
+  "name": "trucos-css",
+  "version": "1.0.0",
+  "description": "Repositorio de la serie Trucos CSS publicados en YouTube",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/escueladigital/Trucos-CSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/escueladigital/Trucos-CSS/issues"
+  },
+  "homepage": "https://github.com/escueladigital/Trucos-CSS#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.1"
+  }
+}
