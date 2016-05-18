@@ -16,7 +16,7 @@ h1 {
 .banner {
   width: 80%;
   height: 500px;
-  background: #00AFF0;
+  background: #fff;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -34,10 +34,10 @@ h1 {
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0.2;
+    opacity: 0.6;
     top: 0; }
   .banner__title, .banner__subtitle {
-    color: #fff;
+    color: #000;
     position: relative;
     text-transform: uppercase; }
   .banner__title {
