@@ -2,47 +2,53 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
-$opacity: .6;
-$main_color: #fff;
-$secondary_color: #292D38;
-$text_color: #000;
 
 .banner {
+  // variables
+  $main-color: #0AB0F0;
+  $text-color: #fff;
+  $opacity: .2;
+
   width : 80%;
   height : 500px;
-  background : $main_color;
+  background: $main-color;
   margin-left : auto;
   margin-right : auto;
-  position : relative;
   display : flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  position : relative;
+  
   &:before {
     content: "";
-    background : url(img/city.jpg) center center / cover;
     position : absolute;
+    top : 0;
     width : 100%;
     height : 100%;
+    background : url(img/city.jpg) center / cover;
     opacity : $opacity;
-    top : 0;
   }
+
   &__title,
-  &__subtitle {
-    color : $text_color;
+  &__subtitle{
+    margin : 0;
+    color: $text-color;
     position : relative;
     text-transform : uppercase;
+    text-align : center;
   }
+
   &__title {
-    font-size : 4em;
-    margin : 0;
-    font-family : Oswald, sans-serif;
+    font-family: Oswald, 'sans-serif';
     font-weight : 300;
+    font-size : 3.5em;
   }
+
   &__subtitle {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'sans-serif';
     font-size : 1.3em;
-    margin : 0;
-    letter-spacing: 0.06em;
+    letter-spacing : 0.07em;
   }
+
 }
