@@ -1,0 +1,47 @@
+/*Estilos generales para todos los proyectos*/
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333; }
+
+h1 {
+  text-align: center;
+  color: #333; }
+
+.rwd-table {
+  font-size: .85em;
+  border: 1px solid rgba(181, 213, 144, 0.5);
+  color: #666;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+  .rwd-table td, .rwd-table th {
+    padding: .8em;
+    border-bottom: 1px solid rgba(181, 213, 144, 0.5); }
+  .rwd-table th {
+    background: #1A8CFF;
+    color: #fff;
+    font-weight: normal;
+    text-align: right; }
+  .rwd-table td {
+    text-align: right; }
+    .rwd-table td:before {
+      content: "$ ";
+      color: #1A8CFF; }
+    .rwd-table td:after {
+      content: ".00"; }
+    .rwd-table td:first-of-type {
+      text-align: left; }
+      .rwd-table td:first-of-type:before {
+        content: ""; }
+      .rwd-table td:first-of-type:after {
+        content: ""; }
+  .rwd-table tr:hover {
+    background: rgba(181, 213, 144, 0.2); }
+  .rwd-table tr td:nth-child(2n) {
+    background: rgba(181, 213, 144, 0.2); }
