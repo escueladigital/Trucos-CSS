@@ -6,3 +6,16 @@ html(lang="es")
     link(rel="stylesheet", href="styles.css")
     title
   body
+    h1 Truco CSS 29 - Tabla responsive
+
+    table.rwd-table
+      tr
+        th
+        -for(var i = 1; i < 9; i++)
+          th Periodo #{i}
+      -for(var n = 1; n < 9; n++)
+        tr
+          td Producto #{n}
+          -for(var i = 100; i < 900; i += 100)
+            td #{i*n}
+
