@@ -1,2 +1,64 @@
 // Importar estilos generales
 @import "../../styles";
+
+$main-color: #1A8CFF;
+$secondary-color: lighten(#76A63F,25);
+$third-color: #fff;
+@mixin center {
+  margin-left : auto;
+  margin-right : auto;
+}
+
+.rwd-table {
+  font-size : .85em;
+  border: 1px solid rgba($secondary-color,.5);
+  color: #666;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width : 80%;
+  @include center;
+
+  td, th {
+    padding : .8em;
+    border-bottom: 1px solid rgba($secondary-color,.5);
+  }
+
+  //estilo de las cabeceras
+  th {
+    background : $main-color;
+    color: $third-color;
+    font-weight : normal;
+    text-align : right;
+  }
+
+  // Prefijos y sufijos en los prrecios
+  td {
+    text-align : right;
+    &:before {
+      content: "$ ";
+      color: $main-color;
+    }
+    &:after {
+      content: ".00"
+    }
+    &:first-of-type {
+      text-align : left;
+      &:before {
+        content: "";
+      }
+      &:after {
+        content: "";
+      }
+    }
+  }
+
+  // Resaltado de filas y columnas
+  tr {
+    &:hover {
+      background : rgba($secondary-color,.2);
+    }
+    td:nth-child(2n){
+      background : rgba($secondary-color,.2);
+    }
+  }
+}
