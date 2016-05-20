@@ -4,21 +4,17 @@
 $main-color: #1A8CFF;
 $secondary-color: lighten(#76A63F,25);
 $third-color: #fff;
-$frozen-width: 8em;
-$width: 1200px;
 
 @mixin center {
   margin-left : auto;
   margin-right : auto;
 }
 
-.rwd-table {
+.table-rwd {
   font-size : .85em;
   border: 1px solid rgba($secondary-color,.5);
   color: #666;
   border-collapse: collapse;
-  table-layout: fixed;
-  min-width: $width;
   @include center;
 
   td, th {
@@ -32,9 +28,6 @@ $width: 1200px;
     color: $third-color;
     font-weight : normal;
     text-align : right;
-    &:first-child {
-      width : $frozen-width;
-    }
   }
 
   // Prefijos y sufijos en los prrecios
@@ -69,4 +62,36 @@ $width: 1200px;
   }
 }
 
+// Truco
+$width: 900px;
+$frozen-width: 8em;
 
+.table-container {
+  overflow-x: auto;
+}
+
+.table-rwd {
+  min-width: $width;
+  td:first-child {
+    position : absolute;
+    background : $third-color;
+    width : $frozen-width;
+  }
+  th:first-child {
+    width : $frozen-width;
+  }
+
+  tr:hover {
+    td:first-child {
+      background : $main-color;
+      color: $third-color;
+    }
+  }
+
+  tr:nth-child(2){
+    td:first-child {
+      box-shadow: 0 -2.7em 0 -6px $main-color,
+                  -6px -2.7em 0 -6px $main-color;
+    }
+  }
+}
