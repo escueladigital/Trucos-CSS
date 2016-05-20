@@ -17,7 +17,7 @@ h1 {
   color: #666;
   border-collapse: collapse;
   table-layout: fixed;
-  width: 80%;
+  min-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
   .rwd-table td, .rwd-table th {
@@ -28,6 +28,8 @@ h1 {
     color: #fff;
     font-weight: normal;
     text-align: right; }
+    .rwd-table th:first-child {
+      width: 8em; }
   .rwd-table td {
     text-align: right; }
     .rwd-table td:before {

@@ -15,7 +15,8 @@ html(lang="es")
           th Periodo #{i}
       -for(var n = 1; n < 9; n++)
         tr
-          td Producto #{n}
+          td
+            span Producto #{n}
           -for(var i = 100; i < 900; i += 100)
             td #{i*n}
 
