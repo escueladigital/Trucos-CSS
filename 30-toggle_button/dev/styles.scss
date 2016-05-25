@@ -1,2 +1,26 @@
 // Importar estilos generales
 @import "../../styles";
+
+//Variables
+$size: 4em;
+$on-color: #067A06;
+$off-color: #DE2B2B;
+$bg-color: #1F2B2D;
+$front-color: #eee;
+
+//mixins
+
+
+body {
+  background : $bg-color;
+}
+
+.toggle-button {
+  display : none;
+  + label {
+    display : block;
+    width : $size * 2;
+    height : $size;
+    background : $off-color;
+  }
+}
