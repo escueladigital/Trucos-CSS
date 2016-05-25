@@ -14,10 +14,5 @@ h1 {
 body {
   background: #1F2B2D; }
 
-.toggle-button {
-  display: none; }
-  .toggle-button + label {
-    display: block;
-    width: 8em;
-    height: 4em;
-    background: #DE2B2B; }
+h1 {
+  color: #eee; }
