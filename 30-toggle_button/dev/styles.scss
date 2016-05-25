@@ -2,25 +2,71 @@
 @import "../../styles";
 
 //Variables
-$size: 4em;
-$on-color: #067A06;
+$size: 2rem;
+$on-color: #069406;
 $off-color: #DE2B2B;
 $bg-color: #1F2B2D;
 $front-color: #eee;
+$transition: all .3s;
 
 //mixins
+@mixin center {
+  margin-left : auto;
+  margin-right : auto;
+}
 
+@mixin relief($color){
+  background: linear-gradient(lighten($color,10), $color, darken($color,10));
+  box-shadow: 0 1px rgba(#fff,.2) inset,
+              0 -1px 1px rgba(#000,.3) inset;
+}
 
 body {
   background : $bg-color;
 }
 
+h1 {
+  color: $front-color;
+}
+
+// Truco
+
 .toggle-button {
   display : none;
-  + label {
-    display : block;
-    width : $size * 2;
-    height : $size;
-    background : $off-color;
+   + label {
+     display : block;
+     width : $size * 2;
+     height : $size;
+     @include center;
+
+     background : rgba($off-color,.4);
+     border-radius : $size / 2;
+
+     transition: $transition;
+
+     box-shadow: 0 0 1px 1px $bg-color inset,
+                 0 0 0 1px darken($bg-color,5);
+
+     &:before {
+       content: "";
+       display : block;
+       width : $size;
+       height : $size;
+       position : relative;
+       left : 0;
+       transition: $transition;
+
+       @include relief($off-color);
+       border-radius : 50%;
+     }
+   }
+  &:checked {
+    + label {
+      background : rgba($on-color,.5);
+      &:before {
+        @include relief($on-color);
+        left: $size;
+      }
+    }
   }
 }

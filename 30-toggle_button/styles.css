@@ -10,3 +10,39 @@ body {
 h1 {
   text-align: center;
   color: #333; }
+
+body {
+  background: #1F2B2D; }
+
+h1 {
+  color: #eee; }
+
+.toggle-button {
+  display: none; }
+  .toggle-button + label {
+    display: block;
+    width: 4rem;
+    height: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(222, 43, 43, 0.4);
+    border-radius: 1rem;
+    transition: all 0.3s;
+    box-shadow: 0 0 1px 1px #1F2B2D inset, 0 0 0 1px #151d1e; }
+    .toggle-button + label:before {
+      content: "";
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      position: relative;
+      left: 0;
+      transition: all 0.3s;
+      background: linear-gradient(#e55757, #DE2B2B, #b91d1d);
+      box-shadow: 0 1px rgba(255, 255, 255, 0.2) inset, 0 -1px 1px rgba(0, 0, 0, 0.3) inset;
+      border-radius: 50%; }
+  .toggle-button:checked + label {
+    background: rgba(6, 148, 6, 0.5); }
+    .toggle-button:checked + label:before {
+      background: linear-gradient(#08c508, #069406, #046304);
+      box-shadow: 0 1px rgba(255, 255, 255, 0.2) inset, 0 -1px 1px rgba(0, 0, 0, 0.3) inset;
+      left: 2rem; }
