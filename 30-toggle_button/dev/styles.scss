@@ -2,24 +2,12 @@
 @import "../../styles";
 
 //Variables
-$size: 2rem;
+$size: 6rem;
 $on-color: #069406;
 $off-color: #DE2B2B;
 $bg-color: #1F2B2D;
 $front-color: #eee;
 $transition: all .3s;
-
-//mixins
-@mixin center {
-  margin-left : auto;
-  margin-right : auto;
-}
-
-@mixin relief($color){
-  background: linear-gradient(lighten($color,10), $color, darken($color,10));
-  box-shadow: 0 1px rgba(#fff,.2) inset,
-              0 -1px 1px rgba(#000,.3) inset;
-}
 
 body {
   background : $bg-color;
@@ -29,4 +17,49 @@ h1 {
   color: $front-color;
 }
 
-// Truco
+@mixin center {
+  margin-left : auto;
+  margin-right : auto;
+}
+
+// truco 
+
+.toggle-button {
+  display : none;
+  + label {
+    display : block;
+    width : $size * 2;
+    height : $size;
+    @include center;
+
+    background : rgba($off-color,.5);
+    border-radius : $size / 2;
+    box-shadow: 0 0 0 2px rgba($front-color,.5);
+
+    transition: $transition;
+
+    &:before {
+      content: "";
+      display : block;
+      width : $size;
+      height : $size;
+
+      border-radius : 50%;
+      background : $off-color;
+
+      position : relative;
+      left : 0;
+
+      transition: $transition;
+    }
+  }
+  &:checked {
+    + label {
+      background : rgba($on-color,.5);
+      &:before {
+        left : $size;
+        background : $on-color;
+      }
+    }
+  }
+}

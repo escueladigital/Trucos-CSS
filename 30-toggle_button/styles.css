@@ -16,3 +16,31 @@ body {
 
 h1 {
   color: #eee; }
+
+.toggle-button {
+  display: none; }
+  .toggle-button + label {
+    display: block;
+    width: 12rem;
+    height: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(222, 43, 43, 0.5);
+    border-radius: 3rem;
+    box-shadow: 0 0 0 2px rgba(238, 238, 238, 0.5);
+    transition: all 0.3s; }
+    .toggle-button + label:before {
+      content: "";
+      display: block;
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      background: #DE2B2B;
+      position: relative;
+      left: 0;
+      transition: all 0.3s; }
+  .toggle-button:checked + label {
+    background: rgba(6, 148, 6, 0.5); }
+    .toggle-button:checked + label:before {
+      left: 6rem;
+      background: #069406; }
