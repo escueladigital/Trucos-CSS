@@ -9,3 +9,112 @@ body {
 $color1: #F3462B;
 $color2: #428538;
 $color3: #54B4E8;
+
+// (1) Menu
+
+.menu {
+  display : flex;
+
+  list-style: none;
+  background : $color3;
+  margin : 0;
+  padding : 0;
+
+  &__link {
+    text-decoration : none;
+    color: #fff;
+    display : block;
+    padding : .5em;
+  }
+
+  &__item {
+    &:nth-child(3) {
+      margin-left : auto;
+      margin-right : auto;
+    }
+  }
+}
+
+
+// (2) Centrado absoluto
+
+.container {
+  background : $color3;
+  width : 80%;
+  margin-left : auto;
+  margin-right : auto;
+  height : 20em;
+
+  display : flex;
+}
+
+.content {
+  display : table;
+  background : $color2;
+  color: #fff;
+  padding : 1em;
+
+  margin: auto;
+}
+
+// (3) Footer fixed
+
+body {
+  display : flex;
+  flex-direction: column;
+  min-height : 100vh;
+}
+
+.main-footer {
+  background : $color1;
+  color: #fff;
+  padding : 1em;
+  text-align : center;
+  margin-top : auto;
+}
+
+h1 {
+  //padding-bottom : 100em;
+}
+
+// 4 - pricing table
+
+.plans-container {
+  display : flex;
+}
+
+.pricing-table {
+  border : 1px solid rgba($color3,.6);
+  padding : 1em;
+  margin: 1em;
+  display : flex;
+  flex-direction: column;
+
+  &__title {
+    background : $color2;
+    color: #fff;
+    padding : .5em;
+    text-align : center;
+    margin-bottom : 1em;
+  }
+
+  &__features {
+    list-style :none;
+    margin : 0 0 2em 0;
+    padding : 0;
+
+    &__item {
+      border-bottom : 1px solid rgba($color2,.3);
+      line-height : 2;
+      min-width : 15EM;
+    }
+  }
+  
+  &__price {
+    background : $color1;
+    color: #fff;
+    display : table;
+    padding : .5em;
+    margin: auto auto 0;
+  }
+}
