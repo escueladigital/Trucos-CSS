@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, minimun-scale=1.0")
+    link(rel="stylesheet", href="styles.css")
+    title
+  body
+    h1 Truco CSS 31 - Flexbox margin-auto
+
+    // (1) menu
+      ul.menu
+        -for(var i=1; i <= 5; i++)
+          li.menu__item
+            a.menu__link(href="#") Item #{i}
+
+    // (2) absolute center
+      .container
+        .content Estoy centrado
+
+    // (3) footer-fixed
+      footer.main-footer
+        | &copy; Escuela Digital - All right reserved
+
+    // (4) pricing-table
+    .plans-container
+      .pricing-table
+        .pricing-table__title Plan A
+        ul.pricing-table__features
+          -for(var i=1; i <= 5; i++)
+            li.pricing-table__features__item Feature #{i}
+        .pricing-table__price $100.00
+
+      .pricing-table
+        .pricing-table__title Plan B
+        ul.pricing-table__features
+          -for(var i=1; i <= 8; i++)
+            li.pricing-table__features__item Feature #{i}
+        .pricing-table__price $100.00
