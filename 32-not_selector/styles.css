@@ -30,7 +30,9 @@ h1 {
   margin: 2em auto; }
 
 .gallery-item {
-  padding: .2em; }
+  padding: .2em;
+  transition: all .2s;
+  position: relative; }
   @media screen and (min-width: 480px) {
     .gallery-item {
       width: 50%; } }
@@ -43,3 +45,10 @@ h1 {
   .gallery-item img {
     display: block;
     border: 1px solid #888; }
+
+.gallery-container:hover .gallery-item:hover {
+  transform: scale(1.5);
+  z-index: 200; }
+
+.gallery-container:hover .gallery-item:not(:hover) {
+  opacity: .2; }
