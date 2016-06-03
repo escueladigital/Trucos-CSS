@@ -1,0 +1,39 @@
+// Importar estilos generales
+@import "../../styles";
+
+body {
+  background : #111;
+}
+
+h1 {
+  color: #eee;
+  font-weight : normal;
+}
+
+.gallery-container {
+  max-width : 900px;
+  display : flex;
+  flex-wrap: wrap;
+  margin : 2em auto;
+}
+
+.gallery-item {
+  padding : .2em;
+
+  @media screen and (min-width: 480px){
+    width : 50%;
+  }
+
+  @media screen and (min-width: 768px){
+    width : 33.33%;
+  }
+
+  @media screen and (min-width: 1024px){
+    width : 25%;
+  }
+
+  img {
+    display : block;
+    border : 1px solid #888;
+  }
+}

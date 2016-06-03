@@ -1,0 +1,45 @@
+/*Estilos generales para todos los proyectos*/
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333; }
+
+h1 {
+  text-align: center;
+  color: #333; }
+
+img {
+  max-width: 100%; }
+
+body {
+  background: #111; }
+
+h1 {
+  color: #eee;
+  font-weight: normal; }
+
+.gallery-container {
+  max-width: 900px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2em auto; }
+
+.gallery-item {
+  padding: .2em; }
+  @media screen and (min-width: 480px) {
+    .gallery-item {
+      width: 50%; } }
+  @media screen and (min-width: 768px) {
+    .gallery-item {
+      width: 33.33%; } }
+  @media screen and (min-width: 1024px) {
+    .gallery-item {
+      width: 25%; } }
+  .gallery-item img {
+    display: block;
+    border: 1px solid #888; }
