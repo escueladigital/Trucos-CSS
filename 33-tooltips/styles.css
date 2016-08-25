@@ -1,0 +1,56 @@
+/*Estilos generales para todos los proyectos*/
+*,
+*::after
+*::before {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.5; }
+
+h1 {
+  text-align: center;
+  color: #333; }
+
+img {
+  max-width: 100%; }
+
+main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+
+[data-tooltip] {
+  display: inline-block;
+  padding-right: 1em;
+  position: relative;
+  border-bottom: 1px dashed lime;
+  cursor: pointer; }
+  [data-tooltip]:hover::before {
+    display: block; }
+  [data-tooltip]::after {
+    content: "?";
+    position: absolute;
+    width: 1.1em;
+    height: 1.1em;
+    text-align: center;
+    background: lime;
+    color: black;
+    line-height: 1.1em;
+    font-size: .7em;
+    border-radius: 50%;
+    right: 0; }
+  [data-tooltip]::before {
+    content: attr(data-tooltip);
+    display: none;
+    color: black;
+    position: absolute;
+    background: lime;
+    font-size: .8rem;
+    font-style: italic;
+    font-weight: normal;
+    top: 100%;
+    min-width: 10em;
+    padding: .2em .5em; }

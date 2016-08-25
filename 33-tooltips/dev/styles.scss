@@ -1,0 +1,48 @@
+// Importar estilos generales
+@import "../../styles";
+
+[data-tooltip]{
+  $bgcolor: lime;
+  $fcolor: black;
+  display : inline-block;
+  padding-right : 1em;
+  position : relative;
+  border-bottom : 1px dashed $bgcolor;
+  cursor: pointer;
+
+  &:hover {
+    &::before {
+      display : block;
+    }
+  }
+
+  &::after {
+    $size: 1.1em;
+    content: "?";
+    position : absolute;
+    width : $size;
+    height : $size;
+    text-align : center;
+    background : $bgcolor;
+    color: $fcolor;
+    line-height : $size;
+    font-size : .7em;
+    border-radius : 50%;
+    right : 0;
+  }
+
+  &::before {
+    content: attr(data-tooltip);
+    display : none;
+    color: $fcolor;
+    position : absolute;
+    background : $bgcolor;
+    font-size : .8rem;
+    font-style: italic;
+    font-weight : normal;
+    top : 100%;
+    min-width: 10em;
+    padding : .2em .5em;
+  }
+
+}

@@ -1,6 +1,8 @@
 /*Estilos generales para todos los proyectos*/
 
-* {
+*,
+*::after
+*::before {
     box-sizing: border-box;
 }
 
@@ -9,6 +11,7 @@ body {
     margin : 0;
     font-family: sans-serif;
     color: #333;
+    line-height : 1.5;
 }
 
 h1 {
@@ -18,4 +21,10 @@ h1 {
 
 img {
   max-width : 100%;
+}
+
+main {
+  width : 90%;
+  margin-left : auto;
+  margin-right : auto;
 }
