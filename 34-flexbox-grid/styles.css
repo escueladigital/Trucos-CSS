@@ -1,0 +1,42 @@
+/*Estilos generales para todos los proyectos*/
+*,
+*::after
+*::before {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.5; }
+
+h1 {
+  text-align: center;
+  color: #333; }
+
+img {
+  max-width: 100%; }
+
+main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -0.5em;
+  margin-right: -0.5em; }
+  .container .item {
+    width: calc(33.33333% - 1em);
+    margin: 0.5em; }
+
+.item {
+  background: lightblue; }
+  .item img {
+    display: block; }
+
+section {
+  overflow: hidden; }

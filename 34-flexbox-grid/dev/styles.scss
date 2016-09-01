@@ -1,0 +1,36 @@
+// Importar estilos generales
+@import "../../styles";
+
+@function item-width($column,$gutter) {
+  @return calc(#{$column} - #{$gutter});
+}
+
+@mixin flexboxgrid($item,$columns,$gutter:1em){
+  $column: 100% / $columns;
+  display : flex;
+  flex-wrap: wrap;
+  margin-left : -($gutter / 2);
+  margin-right : -($gutter / 2);
+
+  #{$item}{
+    width : item-width($column,$gutter);
+    margin: $gutter / 2;
+  }
+}
+
+
+.container {
+  @include flexboxgrid('.item', 3)
+}
+
+.item {
+  background : lightblue;
+
+  img {
+    display : block;
+  }
+}
+
+section {
+  overflow : hidden;
+}
