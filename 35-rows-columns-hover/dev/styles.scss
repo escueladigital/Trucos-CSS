@@ -1,0 +1,59 @@
+// Importar estilos generales
+@import "../../styles";
+
+.table {
+  $hl:yellow;
+
+  width : 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  overflow : hidden;
+  
+  tr {
+    position : relative;
+    display : flex;
+
+    &::after {
+      content: "";
+      position : absolute;
+      top : 0;
+      left : 0;
+      width : 100%;
+      height : 100%;
+      background : #eee;
+      z-index : -2;
+    }
+
+    &:nth-child(even){
+      &::after {
+        background : #ddd;
+      }
+    }
+
+    &:hover {
+      background : $hl;
+    }
+
+  }
+  
+  td {
+    line-height : 2.5;
+    text-align : center;
+    flex: auto;
+    
+    &:hover {
+      position : relative;
+      
+      &::before {
+        content: "";
+        position : absolute;
+        width : 100%;
+        height : 10000px;
+        background : $hl;
+        left : 0;
+        top : -5000px;
+        z-index : -1;
+      }
+    }
+  }
+}
