@@ -1,0 +1,38 @@
+// Importar estilos generales
+@import "../../styles";
+
+body {
+  background : #111;
+}
+
+.spectrum {
+  width : 200px;
+  height : 200px;
+  margin: 5em auto;
+  position : relative;
+  border-radius : 50%;
+  animation: rotate 1s infinite linear;
+
+  @keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+  > div {
+    position : absolute;
+    top : 0;
+    left : 100px;
+    width : 1px;
+    height : 100px;
+    transform-origin: 0 100px;
+  }
+}
+
+@for $i from 0 through 360 {
+  .color:nth-child(#{$i}) {
+    background : hsl($i,100,50);
+    transform: rotate(#{$i}deg);
+  }
+}
+
